@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="../css/todo.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header__nav">
+                <h1>TODO LIST</h1>
+                <button class="logOut">Log out</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <form id="todo-form">
+                <input type="text" placeholder="Title" id="title">
+                <input type="text" placeholder="Description" id="descr">
+                <button>Create Todo</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="render">
+        <div class="container">
+            <div id="output">
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="backdrop">
+        <div class="modal">
+            <div class="modalHeader">
+                <h2 class="'order">Edit Todo</h2>
+                <div class="modalCloseButton">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="modalContent">
+                <input type="text" id="modalTitle">
+                <input type="text" id="modalDescr">
+                <button id="modalBtn" style="display:block">EDIT</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/todo.js"></script>
+</body>
+
+</html>
